@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    color: white;
+    background-color:rgb(131, 95, 4) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+}
+
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-task{
+    width: 600px;
+    min-height: 500px;
+    background-color: rgb(228, 170, 24);
+    border: 2px solid white;
+    padding: 25px;
+    margin: 10px; 
+    border-radius: 25px;
+}
+
+h1{
+    margin: 20px 0;
+    text-align: center;
+    color: rgb(54, 36, 2);
+    font-size: 25px;
+}
+
+
+@media (500px < width < 800px) {
+
+    .main-container-task{
+        width: 480px;
+        min-height: 600px;
+    }
+
+}
+
+@media (300px < width <= 500px) {
+
+    .main-container-task{
+        width: 290px;
+        min-height: 300px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+}
+
+@media (width <= 300px) {
+ 
+    .main-container-task{
+        width: 220px;
+        min-height: 300px;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+}

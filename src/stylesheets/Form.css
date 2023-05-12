@@ -1,0 +1,75 @@
+.task-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-task{
+    width: 400px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid rgb(87, 31, 10);
+    outline: none;
+}
+
+.task-button{
+    padding: 14px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid rgb(87, 31, 10);
+    border-left: transparent;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: coral;
+    text-transform: capitalize;
+}
+
+@media (500px < width < 800px) {
+ 
+    .input-task{
+        padding: 14px 32px 15px 16px;
+        width: 270px;
+        font-size: 15px;
+    }
+    
+    .task-button{
+        padding: 13px;
+        font-size: 16px;
+    }
+}
+
+@media (300px < width <= 500px) {
+
+    .input-task{
+        padding: 14px 32px 15px 16px;
+        width: 165px;
+        font-size: 15px;
+    }
+    
+    .task-button{
+        padding: 7px;
+        width: 70px;
+        font-size: 13px;
+    }
+
+}
+
+@media (width <= 300px) {
+ 
+    .input-task{
+        padding: 15px 12px 14px 10px;
+        width: 130px;
+        font-size: 12px;
+    }
+    
+    .task-button{
+        padding: 8px;
+        width: 50px;
+        font-size: 9px;
+    }
+}
